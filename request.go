@@ -66,7 +66,7 @@ type response struct {
 request sends an API Request using the credentials from User.
 */
 func (u *User) request(mehtode string, jsonParam interface{}) (response, error) {
-	url := u.server + "/WebUntis/jsonrpc.do" + "?school=" + u.school
+	url := u.server + "/WebUntis/" + "?school=" + u.school
 
 	request := request{
 		Id:      0,
